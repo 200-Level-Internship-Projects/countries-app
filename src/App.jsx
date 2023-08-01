@@ -1,13 +1,14 @@
 // import { useState } from 'react'
 import './App.css'
-import '../components/Header';
-import '../components/Main';
+// import '../components/Header';
+// import '../components/Main';
 
 function App() {
 
   return (
     <>
-      {/* <Header /> */}
+    appppppppppppppp
+      <Header />
       <Main />
     </>
   )
