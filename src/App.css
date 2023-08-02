@@ -210,7 +210,9 @@ body{
 .card-img{
   background-color: red;
   width: 100%;
+  height: 100%;
 }
+
 
 .card-info{
   padding: 20px;
@@ -284,8 +286,9 @@ body{
   color: var(--text-color);
 }
 
-/* .flag{
-} */
+.flag{
+  height: 100%;
+}
 
 .country-info{
   display: flex;
@@ -333,6 +336,10 @@ body{
   width: auto;
   height: 25px;
   color: var(--text-color);
+  background-color: var(--bg-components);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 5px var(--box-shadow);
 
 
 }
@@ -342,6 +349,8 @@ body{
   padding: 0 10px;
   cursor: pointer;
   color: var(--text-color);
+  background-color: var(--bg-components);
+  border: none;
 }
 
 

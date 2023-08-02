@@ -1,20 +1,29 @@
 import { useState, useEffect } from 'react';
 
 const Flag = () => {
-    const [imageLink, setImageLink] = useState('');
+  const [imageSource, setImageSource] = useState('');
 
+    const GetFlagSource = async () =>{
+        const response = await fetch('https://restcountries.com');
 
+        if (!response.ok) throw new Error("Something went wrong!");
+
+        const data = await response.json();
+
+        setImageSource(data[0].flag.svg);
+  
+        console.log(data);
+      }
     useEffect(() => {
-        fetch('/data.json') 
-          .then((response) => response.json())
-          .then((data) => setImageLink(data.imageLink))
-          .catch((error) => console.error('Error fetching data:', error));
+      GetFlagSource();
       }, []);
+
   return (
         <div className='card-img'>
-          (<img src={imageLink} alt="Image" />)
+          <img src={imageSource} alt="Image" />
         </div>
       );
     };
+
 
 export default Flag

@@ -1,12 +1,13 @@
 import '../App.css';
 import BorderLink from './BorderLink';
+import Flag from './Flag'
 
 
-const DetailsInfo = () => {
+const Info = () => {
   return (
     <div className='details-info'>
         <div className="flag">
-            {/* Country flag here */}
+            <Flag />
         </div>
         <div className="country-info">
             <div className='details-name'>Country</div>
@@ -36,4 +37,4 @@ const DetailsInfo = () => {
   )
 }
 
-export default DetailsInfo
+export default Info

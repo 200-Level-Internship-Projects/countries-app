@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import Details from './Details.jsx';
+import Home from './Home.jsx';
+import About from './About.jsx';
 import './App.css';
 import { ThemeProvider } from './components/ThemeContext.jsx';
 import { createBrowserRouter, RouterProvider,} from "react-router-dom";
@@ -9,11 +9,11 @@ import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
-    path: "./Details.jsx",
-    element: <Details />,
+    path: "/about",
+    element: <About />,
   }
   
 ]);
