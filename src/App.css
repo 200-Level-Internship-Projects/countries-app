@@ -202,6 +202,9 @@ body{
   grid-template-rows: 1fr 1fr;
   background-color: var(--bg-components);
   box-shadow: 2px 2px 4px var(--box-shadow);
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .card-img{
