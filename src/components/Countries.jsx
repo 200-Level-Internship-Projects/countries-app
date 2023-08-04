@@ -1,22 +1,17 @@
-import Country from './country';
+import Country from './Country';
 import '../App.css';
 import { useContext } from 'react';
 import ThemeContext from './ThemeContext';
 
-const Countries = () => {
+const Countries = ({ countries }) => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
     <div className={`countries ${darkMode ? 'dark-theme' : 'light-theme'}`}>
-        <Country/>
-        <Country/>
-        <Country/>
-        <Country/>
-        <Country/>
-        <Country/>
-        <Country/>
-        <Country/>
-    </div>
+      {countries.map((country) => (
+        <Country key={country.name.common} country={country} />
+      ))}
+  </div>
   )
 }
 

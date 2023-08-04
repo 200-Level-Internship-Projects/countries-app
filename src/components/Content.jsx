@@ -12,7 +12,7 @@ const Content = () => {
         <div className="back-nav">
             <div className="search-icon">
                 <FontAwesomeIcon icon={faArrowLeft} />
-            </div>
+            </div>  
                 <button>Back</button>
         </div>
         <Info/>

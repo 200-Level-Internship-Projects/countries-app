@@ -8,7 +8,7 @@ const Search = () => {
         <div className="search-icon">
         <FontAwesomeIcon icon={faSearch} />
         </div>
-        <input type="text" className="search-input" placeholder='Search for a country...'/>
+        <input type="text" className="search-input" placeholder='Search for a country...' />
     </div>
   )
 }
