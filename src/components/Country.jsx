@@ -2,9 +2,13 @@
 
 
 
-const Country = ({name, population, region, capital, flag}) => {
+const Country = ({name, population, region, capital, flag, goToDetails, code}) => {
+
+    const goToHandler = () => {
+        goToDetails(code);
+    }
     return (
-        <div className="country">
+        <div className="country" onClick={goToHandler}>
             <div className="flag-container">
                 <img src={flag} alt="flag" />
             </div>
