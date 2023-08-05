@@ -114,20 +114,23 @@ const App = () => {
                 !noCountry ? (
                   countries.map(country => 
                     <Country darkMode = {darkMode} 
-                    key={country.name.official}
+                    key={country.alpha3Code}
                     population ={country.population}
                     region = {country.region}
                     capital = {country.capital}
                     flag= {country.flags.svg}
                     name = {country.name.common}
                     goToDetails ={goToDetails}
-                    code = {country.alpha3Code} />)
+                    code = {country.cca3} />)
                 ) : <p>No Countries found...</p>
               }
             </div>
           </div>
         } />
-        <Route path="/:countryCode"  element={<CountryDetails darkMode={darkMode} countries={countries}/>}/>
+        <Route path="/:countryCode"  element={<CountryDetails 
+        darkMode={darkMode} 
+        countries={countries}
+        refetch={getCountries}/>}/>
       </Routes>
     </div>
   )
