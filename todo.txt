@@ -4,7 +4,7 @@ Script.js --> Home.jsx --> Header.jsx |--> Header Text
             |                   |                        | --> Toggle Text
             |                   v
             |                   --> Top.jsx | --> Search.jsx
-            |                    |           | --> Filter.jsx
+            |                    |          | --> Filter.jsx
             |                    |
             |                    --> Countries.jsx --> Country.jsx | --> Flag.jsx
             |                                                      | --> Card Info | Country name
@@ -16,3 +16,9 @@ Script.js --> Home.jsx --> Header.jsx |--> Header Text
                       --> AboutContainer.jsx --> AboutTop.jsx
                                              --> AboutBottom.jsx --> Flag.jsx
                                                                  --> AboutCardInfo.jsx -->
+
+
+
+To Do List
+1) Search for how to style select options
+2) Adjust font-sizes

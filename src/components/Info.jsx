@@ -37,19 +37,13 @@ const Info = () => {
             <Flag />
         </div>
         <div className="country-info">
-            <div className='details-name'>{country.name.common}</div>
+            
             <div className='country-text'>
                 <div className="column-1">
-                    <p><span>Native Name:</span>{country.name.native}</p>
-                    <p><span>Population:</span>{country.population}</p>
-                    <p><span>Region:</span>{country.region}</p>
-                    <p><span>Sub Region:</span>{country.subregion}</p>
-                    <p><span>Capital:</span>{country.capital}</p>
+
                 </div>
                 <div className="column-2">
-                    <p><span>Top Level Domain:</span>cccccc</p>
-                    <p><span>Currencies:</span>qqqqqqqq</p>
-                    <p><span>Languages:</span>yyyyyyyyy</p>
+
                 </div>
             </div>
             <div className="border-countries">
