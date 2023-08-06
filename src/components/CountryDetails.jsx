@@ -35,22 +35,10 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
       topLevelDomain = country.tld;
       population = country.population;
       currencies = country.currencies;
-
-      // currencies.forEach(currency => {
-      //   currencies.push(currency.name);
-      // })
-
-      // borders.forEach(border => {
-      //   borders.push(border.name);
-      // })
-
-      // languages.forEach(language => {
-      //   languages.push(language.name);
-      // })
+      languages = country.languages;
+      borders = country.borders;
     }
   })
-
-  const getFullBorder = () =>{}
   return (
     <div className="country-details">
       <button className={`back ${darkMode ? 'darkMode' : ''}`} onClick={goBack}>
