@@ -62,40 +62,47 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
               <p><span>Capital:</span>{capital}</p>
               <p><span>Top Level Domain:</span>{topLevelDomain}</p>
               <p><span>Currencies:</span>
-                {/* {currencies.map(currency => {
-                  if (currencies.indexOf(currency) != -1) {
-                    return (`${currency.name},`)
-                  }
-                  else {
-                    return (`${ currency.name }`)
-                  }
-                })} */}
-                </p>
+                {Object.keys(currencies).map((currencyCode, index, array) => {
+                  const currency = currencies[currencyCode];
+                  const { name, symbol } = currency;
+
+                  return (
+                    <span className='light' key={currencyCode}>
+                      {name} ({symbol})
+                      {index !== array.length - 1 ? ', ' : ''}
+                    </span>
+                  );
+                })}
+              </p>
               <p><span>Languages:</span>
-                {/* {languages.map(language => {
-                  if (languages.indexOf(language) != -1) {
-                    return (`${language},`)
-                  }
-                  else {
-                    return ({ language })
-                  }
-                })} */}
-                </p>
+                {Object.keys(languages).map((languageCode, index, array) => {
+                  const languageName = languages[languageCode];
+
+                  return (
+                    <span key={languageCode} className='light'>
+                      {languageName}
+                      {index !== array.length - 1 ? ', ' : ''}
+                    </span>
+                  );
+                })}
+              </p>
             </div>
           </div>
           <div className="border-countries">
             <p>Border Countries:</p>
-            {/* {borders.length ? (
-              borders.map(border =>
-                <div className='border-country' key={border} onClick={
-                  () =>{
-                    refetch();
-                    navigate(`/${border}`);
-                  }
-                }>
-                  <button>{border}</button>
-                </div>)) :
-              (<div>No borders</div>)} */}
+            {borders.length ? (
+              borders.map((borderCountryCode, index, array) => (
+                <div className="border-country" key={borderCountryCode} onClick={() => {
+                  refetch();
+                  navigate(`/${borderCountryCode}`);
+                }}>
+                  <button>{borderCountryCode}</button>
+                  {index !== array.length - 1 ? ', ' : ''}
+                </div>
+              ))
+            ) : (
+              <div>No borders</div>
+            )}
           </div>
         </div>
       </div>

@@ -1,24 +1,5 @@
-FLow of the App
-Script.js --> Home.jsx --> Header.jsx |--> Header Text
-            |          --> Main.jsx   |--> Toggle Switch | --> Toggle icon
-            |                   |                        | --> Toggle Text
-            |                   v
-            |                   --> Top.jsx | --> Search.jsx
-            |                    |          | --> Filter.jsx
-            |                    |
-            |                    --> Countries.jsx --> Country.jsx | --> Flag.jsx
-            |                                                      | --> Card Info | Country name
-            |                                                                      | Population
-            |                                                                      | Region 
-            |                                                                      | Capital
-            v
-            About.jsx --> Header.jsx
-                      --> AboutContainer.jsx --> AboutTop.jsx
-                                             --> AboutBottom.jsx --> Flag.jsx
-                                                                 --> AboutCardInfo.jsx -->
-
-
 
 To Do List
-1) Search for how to style select options
-2) Adjust font-sizes
+1) Work on responsiveness
+2) Currencies, Languages and Borders are objects that have objects, research on how to access their content
+3) Learn how to deploy react app on GitHub Pages
