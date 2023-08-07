@@ -119,6 +119,7 @@ const App = () => {
                     region = {country.region}
                     capital = {country.capital}
                     flag= {country.flags.svg}
+                    alt = {country.flag.alt}
                     name = {country.name.common}
                     goToDetails ={goToDetails}
                     code = {country.cca3} />)

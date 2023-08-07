@@ -1,5 +1,5 @@
 
-const Country = ({name, population, region, capital, flag, goToDetails, code}) => {
+const Country = ({name, population, region, capital, flag, goToDetails, code, alt}) => {
 
     const goToHandler = () => {
         goToDetails(code);
@@ -7,7 +7,7 @@ const Country = ({name, population, region, capital, flag, goToDetails, code}) =
     return (
         <div className="country" onClick={goToHandler}>
             <div className="flag-container">
-                <img src={flag} alt="flag" />
+                <img src={flag} alt={alt} />
             </div>
             <div className="details">
                 <h3 className="country-name">{name}</h3>
