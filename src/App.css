@@ -481,9 +481,10 @@ select option{
   .header{
     width: 100%;
     padding: 0 30px;
+    height: 75px;
   }
   .logo{
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   .toggle{
     gap: 10px;
@@ -495,11 +496,12 @@ select option{
   }
 
   .toggle-text{
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .app-body{
     padding: 0 30px;
+    margin-top: 75px;
   }
 
   .input{
@@ -513,9 +515,25 @@ select option{
     height: 55px;
   }
 
+  ::placeholder{
+    font-size: 1rem;
+  }
+
+  .search-input{
+    font-size: 1rem;
+  }
+
   .filter{
     width: 45%;
     height: 55px;
+  }
+
+  .filter select{
+    font-size: 1rem;
+  }
+
+  select option{
+    font-size: 1rem;
   }
 
   .countries{
@@ -523,7 +541,7 @@ select option{
     justify-content: center;
   }
   .country{
-    width: 250px;
+    width: 270px;
   }
 
   .country-details{
