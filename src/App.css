@@ -572,6 +572,10 @@ select option{
     height: 250px;
   }
 
+  .country-name{
+    font-size: 1.6rem;
+  }
+
   .country-details-info{
     height: auto;
     width: 100%;
@@ -582,6 +586,14 @@ select option{
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .left-info,.right-info{
+    font-size: 1.2rem;
+  }
+
+  .border-countries{
+    font-size: 1.2rem;
   }
 
   .border-countries > p{
