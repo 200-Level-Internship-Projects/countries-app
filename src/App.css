@@ -542,6 +542,11 @@ select option{
   }
   .country{
     width: 270px;
+    height: 420px;
+  }
+
+  .flag-container{
+    height: 180px;
   }
 
   .details h3{
@@ -550,6 +555,7 @@ select option{
 
   .details p{
     font-size: 1.2rem;
+    padding-bottom: 17px;
   }
 
   .country-details{
