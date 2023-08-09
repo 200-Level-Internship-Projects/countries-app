@@ -56,7 +56,7 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
           <div className="info">
             <div className="left-info">
               <p><span>Native Name:</span>{nativeName}</p>
-              <p><span>Population:</span>{population}</p>
+              <p><span>Population:</span>{population.toLocaleString()}</p>
               <p><span>Region:</span>{region}</p>
               <p><span>Sub Region:</span>{subregion}</p>
             </div>
