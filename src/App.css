@@ -368,8 +368,188 @@ select option{
 
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .app{
+    align-items: center;
+  }
+  .header{
+    width: 100%;
+    padding: 0 30px;
+    height: 70px;
+  }
+  .logo{
+    font-size: 1rem;
+  }
+  .toggle{
+    gap: 0;
+  }
+
+  .toggle-img{
+    height: 25px;
+    width: 25px;
+  }
+
+  .toggle-text{
+    font-size: 1rem;
+  }
+
+  .app-body{
+    padding: 0 30px;
+    margin-top: 70px;
+  }
+
+  .input{
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .search{
+    width: 90%;
+  }
+
+  .filter{
+    width: 45%;
+  }
+
+  .countries{
+    display: flex;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: flex-start;
+  }
+  .country{
+    width: 220px;
+  }
+
+  .country-details{
+    padding: 0 20px;
+    padding-top: 30px;
+    height: auto;
+  }
+
+  .country-details-body{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .country-details-flag{
+    width: 100%;
+    height: 350px;
+  }
+
+  .country-details-info{
+    height: auto;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .country-name{
+    font-size: 2.2rem;
+  }
+
+  .left-info,.right-info{
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .border-countries{
+    font-size: 1rem;
+  }
+
+  .border-countries > p{
+    width: 100%;
+  }
+
 }
 
 /* Mobile Styles */
 @media (max-width: 767px) {
+  .app{
+    align-items: center;
+  }
+  .header{
+    width: 100%;
+    padding: 0 10px;
+  }
+  .logo{
+    font-size: 0.8rem;
+  }
+  .toggle{
+    gap: 0;
+  }
+
+  .toggle-img{
+    height: 15px;
+    width: 15px;
+  }
+
+  .toggle-text{
+    font-size: 0.8rem;
+  }
+
+  .app-body{
+    padding: 0 10px;
+  }
+
+  .input{
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .search{
+    width: 100%;
+  }
+
+  .filter{
+    width: 45%;
+  }
+
+  .countries{
+    display: flex;
+    justify-content: center;
+  }
+  .country{
+    width: 250px;
+  }
+
+  .country-details{
+    padding: 0 20px;
+    padding-top: 30px;
+    height: auto;
+  }
+
+  .country-details-body{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .country-details-flag{
+    width: 100%;
+    height: 250px;
+  }
+
+  .country-details-info{
+    height: auto;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .border-countries > p{
+    width: 100%;
+  }
 }
