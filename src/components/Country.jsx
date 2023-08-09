@@ -4,6 +4,8 @@ const Country = ({name, population, region, capital, flag, goToDetails, code, al
     const goToHandler = () => {
         goToDetails(code);
     }
+    let formattedCapital = Array.isArray(capital) ? capital.join(', ') : capital;
+
     return (
         <div className="country" onClick={goToHandler}>
             <div className="flag-container">
@@ -13,7 +15,7 @@ const Country = ({name, population, region, capital, flag, goToDetails, code, al
                 <h3 className="country-name">{name}</h3>
                 <p className="population"><span>Population:</span> {population}</p>
                 <p className="region"><span>Region: </span>{region}</p>
-                <p className="capital"><span>Capital:</span> {capital}</p>
+                <p className="capital"><span>Capital:</span> {formattedCapital}</p>
             </div>
         </div>
     )

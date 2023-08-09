@@ -8,7 +8,7 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
 
 
   const goBack = () => {
-    navigate('/')
+    navigate(-1)
   }
   let name;
   let nativeName;
@@ -19,6 +19,7 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
   let subregion;
   let topLevelDomain;
   let alt;
+  let formattedCapital;
   let currencies = [];
   let borders = [];
   let languages = [];
@@ -30,6 +31,7 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
       flag = country.flags.svg;
       alt = country.flags.alt;
       capital = country.capital;
+      formattedCapital = Array.isArray(capital) ? capital.join(', ') : capital;
       subregion = country.subregion;
       region = country.region;
       topLevelDomain = country.tld;
@@ -59,7 +61,7 @@ const CountryDetails = ({ darkMode, countries, goToDetails, refetch }) => {
               <p><span>Sub Region:</span>{subregion}</p>
             </div>
             <div className="right-info">
-              <p><span>Capital:</span>{capital}</p>
+              <p><span>Capital:</span>{formattedCapital}</p>
               <p><span>Top Level Domain:</span>{topLevelDomain}</p>
               <p><span>Currencies:</span>
                 {Object.keys(currencies).map((currencyCode, index, array) => {
